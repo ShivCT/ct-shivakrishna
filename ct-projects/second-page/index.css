@@ -1,9 +1,12 @@
-.card {
-    padding: 10px;
-}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+  }
 
 .bg-container {
-    background-image: url("https://images.hdqwalls.com/wallpapers/4k-assassins-creed-origins-2019-c0.jpg");
+    background-image: url("./image/4k-assassins-creed-origins-2019-c0.jpg");
     height: 100vh;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -22,12 +25,15 @@
     font-weight: bold;
     font-size: 60px;
     text-decoration-line: underline;
+    padding-bottom: 20px;
+    
 
 }
 
 .paragraph {
     color: white;
     font-size: 22px;
+    padding-bottom: 20px;
 }
 
 .button {
@@ -37,4 +43,5 @@
     background-color: #f00000;
     border-radius: 20px;
     border-width: 5px;
+    
 }
