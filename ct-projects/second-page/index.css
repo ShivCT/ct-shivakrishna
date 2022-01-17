@@ -1,0 +1,40 @@
+.card {
+    padding: 10px;
+}
+
+.bg-container {
+    background-image: url("https://images.hdqwalls.com/wallpapers/4k-assassins-creed-origins-2019-c0.jpg");
+    height: 100vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    padding: 5px;
+}
+
+.h-center {
+    text-align: center;
+}
+
+.main-heading {
+    color: red;
+    font-family: "lobster";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    text-decoration-line: underline;
+
+}
+
+.paragraph {
+    color: white;
+    font-size: 22px;
+}
+
+.button {
+    color: white;
+    height: 40px;
+    width: 140px;
+    background-color: #f00000;
+    border-radius: 20px;
+    border-width: 5px;
+}
