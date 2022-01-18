@@ -1,47 +1,199 @@
-*{
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* global */
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ul{
     margin: 0;
     padding: 0;
-    border: 0;
     
-  }
-
-.bg-container {
-    background-image: url("./image/4k-assassins-creed-origins-2019-c0.jpg");
-    height: 100vh;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    background-size: cover;
-    padding: 5px;
+}
+.button-1{
+    height: 38px;
+    color: white;
+    background: #e8491d;
+    width: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.h-center {
+/* header */
+
+header{
+    background: #35424a;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase{
+    min-height: 400px;
+    text-align: center;
+    color:white;
+    background: url(./image/showcase.jpg) no-repeat 0 -500px;
+}
+#showcase h1{
+    font-size: 55px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+
+/* newsletter */
+
+#newsletter{
+    padding: 20px;
+    color: white;
+    background: #35424a;
+    
+}
+#newsletter h1{
+    float: left;
+    
+}
+#newsletter form{
+    
+    float: right;
+    margin-top: 16px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
     text-align: center;
 }
-
-.main-heading {
-    color: red;
-    font-family: "lobster";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    text-decoration-line: underline;
-    padding-bottom: 20px;
-    
-
+#boxes .box img{
+    width: 90px;
 }
 
-.paragraph {
+
+/* sidebar */
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+/* main-col */
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Services*/
+ul#services{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 15px;
+    background-color: #e6e6e6;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+    padding: 5px;
+    width: 90%;
+}
+
+/* Footer */
+footer{
+    padding: 20px;
+    background: #e8491d;
     color: white;
-    font-size: 22px;
-    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
 }
-
-.button {
-    color: white;
-    height: 40px;
-    width: 140px;
-    background-color: #f00000;
-    border-radius: 20px;
-    border-width: 5px;
-    
-}
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter button{
+        display: block;
+        width: 100%;
+        
+    }
+    #newsletter form input[type="email"],.quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #boxes {
+        width: 100%;
+    }
