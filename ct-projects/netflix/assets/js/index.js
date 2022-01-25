@@ -1,34 +1,41 @@
-const tabItems = document.querySelectorAll('.tab-item');
-const tabContentItems = document.querySelectorAll('.opt-content-item');
+const options = document.querySelectorAll('.tab-item');
+const optionsContent = document.querySelectorAll('.opt-content-item');
 
-// Select tab content item
+
 function selectItem(e) {
-	// Remove all show and border classes
+
+	// Remove border classes
 	removeBorder();
 	removeShow();
-	// Add border to current tab item
+
+	// Add border 
+
 	this.classList.add('tab-border');
-	// Grab content item from DOM
+
+	
 	const tabContentItem = document.querySelector(`#${this.id}-content`);
+
 	// Add show class
 	tabContentItem.classList.add('show');
 }
 
-// Remove bottom borders from all tab items
+// Remove bottom borders 
+
 function removeBorder() {
-	tabItems.forEach(item => {
+	options.forEach(item => {
 		item.classList.remove('tab-border');
 	});
 }
 
-// Remove show class from all content items
+// Remove show class
+
 function removeShow() {
-	tabContentItems.forEach(item => {
+	optionsContent.forEach(item => {
 		item.classList.remove('show');
 	});
 }
 
-// Listen for tab item click
-tabItems.forEach(item => {
+// Event listner 
+options.forEach(item => {
 	item.addEventListener('click', selectItem);
 });
