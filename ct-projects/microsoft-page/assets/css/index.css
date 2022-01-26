@@ -95,7 +95,7 @@ nav .right-menu {
     
     
     height: 400px;
-    background: url("/ct-projects/microsoft-page/assets/img/slide1.webp") ;
+    background: url('/ct-projects/microsoft-page/assets/img/slide1.png') center ;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@ nav .right-menu {
 
 /* Xbox Section */
 .xbox{
-    background: url('/ct-projects/microsoft-page/assets/img/xbox.webp') center;
+    background: url('/ct-projects/microsoft-page/assets/img/xbox.png') center;
     background-size: cover;
     width: 90%;
     height: 300px;
@@ -197,7 +197,7 @@ nav .right-menu {
 }
 /* Carbon Section */
 .carbon{
-    background: url('/ct-projects/microsoft-page/assets/img/carbon.webp') center;
+    background: url('/ct-projects/microsoft-page/assets/img/carbon.jpg');
     background-size: cover;
     width: 90%;
     height: 300px;
