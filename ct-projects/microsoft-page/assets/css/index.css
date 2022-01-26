@@ -95,7 +95,7 @@ nav .right-menu {
     
     
     height: 400px;
-    background: url('/ct-projects/microsoft-page/assets/img/slide1.webp') center;
+    background: url("/ct-projects/microsoft-page/assets/img/slide1.webp") ;
     background-size: cover;
     display: flex;
     flex-direction: column;
