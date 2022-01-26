@@ -17,6 +17,10 @@ ul,li{
     list-style: none;
     
 }
+img{
+    height: auto;
+    width: auto;
+}
 a{
     
     text-decoration: none;
@@ -91,7 +95,7 @@ nav .right-menu {
     
     
     height: 400px;
-    background: url('/ct-projects/microsoft-page/assets/img/slide1.webP');
+    background: url('/ct-projects/microsoft-page/assets/img/slide1.webP') center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -178,7 +182,7 @@ nav .right-menu {
 
 /* Xbox Section */
 .xbox{
-    background: url(/ct-projects/microsoft-page/assets/img/xbox.webP);
+    background: url(/ct-projects/microsoft-page/assets/img/xbox.webP) center;
     background-size: cover;
     width: 90%;
     height: 300px;
@@ -193,7 +197,7 @@ nav .right-menu {
 }
 /* Carbon Section */
 .carbon{
-    background: url(/ct-projects/microsoft-page/assets/img/carbon.webP);
+    background: url(/ct-projects/microsoft-page/assets/img/carbon.webP) center;
     background-size: cover;
     width: 90%;
     height: 300px;
