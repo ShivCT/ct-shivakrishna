@@ -182,7 +182,7 @@ nav .right-menu {
 
 /* Xbox Section */
 .xbox{
-    background: url(/ct-projects/microsoft-page/assets/img/xbox.webp) center;
+    background: url('/ct-projects/microsoft-page/assets/img/xbox.webp') center;
     background-size: cover;
     width: 90%;
     height: 300px;
@@ -197,7 +197,7 @@ nav .right-menu {
 }
 /* Carbon Section */
 .carbon{
-    background: url(/ct-projects/microsoft-page/assets/img/carbon.webp) center;
+    background: url('/ct-projects/microsoft-page/assets/img/carbon.webp') center;
     background-size: cover;
     width: 90%;
     height: 300px;
