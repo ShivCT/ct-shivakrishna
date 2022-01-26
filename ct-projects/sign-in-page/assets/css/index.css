@@ -75,6 +75,7 @@ span{
 }
 #signin .text-input{
     width: 100%;
+    color: white;
     background-color: #181818;
     border: #555 1px solid;
     border-radius: 2px;
