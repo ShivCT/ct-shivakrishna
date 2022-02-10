@@ -264,7 +264,8 @@ a{
     
 }
 #portfolio .list-container .card-container:hover{
-    transform: scale(0.98);
+    transform: scale(1.1);
+    transition: all 400ms ease-in;
     cursor: pointer;
 
     
@@ -276,6 +277,7 @@ a{
 }
 
 /* About Us Section */
+
 #aboutus{
     background-color: white;
     width: 90%;
@@ -435,6 +437,7 @@ a{
     font-size: 14px;
     padding: 20px;
     border-radius: 8px;
+    margin-right: 40px;
 }
 
 #contact a{
@@ -582,9 +585,12 @@ a{
         font-size: 22px;
         font-weight: bold;
         padding-bottom: 20px;
-        width: 100%;
-        
-        
+        width: 100%; 
+    }
+    #aboutus p.f-para{
+        text-align: center;
+        align-items: center;
+
     }
     #aboutus .about-text-container{
         display: flex;
@@ -674,12 +680,23 @@ a{
     
         
     }
+    #contact form input{
+        display: grid;
+        
+        grid-template-columns: repeat(1,1fr);
+        height: 50px;
+        width: 330px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+    #contact input#name,#contact input#email,#contact input#subject{
+        width: 580px;
+    }
     #contact div.right{
         display: none;
+        
     }
-    #contact input.message{
-        display: none;
-    }
+ 
     #contact input.message{
         display: none;
     }
@@ -699,4 +716,9 @@ a{
         grid-template-columns: repeat(1,1fr);
         
     }
-}
+    
+    #contact input#name,#contact input#email,#contact input#subject{
+        width: 320px;
+        
+    }
+}    
