@@ -266,7 +266,7 @@ a{
 #portfolio .list-container .card-container:hover{
     transform: scale(0.98);
     cursor: pointer;
-    
+
     
 }
 
@@ -604,11 +604,21 @@ a{
         
         
     }
-
-    #aboutus .about-text-container-two{
+    #aboutus h4.abt-h{
+    
+        text-align: center;
+        
+        
+    }
+    #aboutus h4.abt-p{
+        text-align: center;
+        
+        
+    }
+    #aboutus .about-text-container-two,#aboutus .about-text-container-two h4{
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
         text-align:center;
         
@@ -627,6 +637,7 @@ a{
         
         
     }
+    
     
     #aboutus .about-img-container-top{
         display: block;
