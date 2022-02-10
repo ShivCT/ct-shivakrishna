@@ -1,0 +1,685 @@
+/*Global Styles */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    
+}
+main{
+    width: 100%;
+    overflow: hidden;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: white;
+    
+}
+ul,li{
+    list-style: none;
+    
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+    
+}
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top:20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+.logo{
+    height: 30px;
+    width: 75px;
+}
+/* Hero Section */
+#hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/ct-projects/psd-one/assets/images/Background\ Image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1; 
+    overflow: hidden;
+}
+#hero::after{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar{
+    float: right; 
+}
+
+.nav-items li{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+
+.nav-items li a{
+    
+    margin-left: 30px;
+    font-size: 14px;
+    
+    
+}
+
+.nav-items li a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    width: 79;
+    position: absolute;
+    z-index: 2;
+    
+}
+.icon{
+    height: 45px;
+    width: 45px;
+}
+.branding{
+    height: 300px;
+    width: 292px;
+}
+#hero .cta{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#hero h1{
+    font-size: 40px;
+    color: white;
+    font-family: 'DroidSerif Italic';
+    font-style: italic;
+    font-weight: 300;
+}
+#hero p{
+    font-size: 75px;
+    color: white;
+    margin-top: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn{
+    background-color: #fed136;
+    color: white;
+    height: 65px;
+    width: 240px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 60px;
+}    
+
+.btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Services Section */
+#services{
+    overflow: hidden;
+}
+
+.heading{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.para{
+    padding-top: 25px;
+    font-size: 16px;
+    color: #898989;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 60px;
+}
+#services .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#services .services-list-container{
+    display: grid;
+    grid-template-rows: repeat(1,3fr);
+    grid-gap: 55px;
+}
+#services .services-list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#services .img-container{
+    border: solid 4px #fed23a;
+    border-radius: 50px;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#services h3{
+    padding-top: 25px;
+    font-weight: 700;
+}
+#services .robotoslab14px{
+    font-size: 14px;
+    
+    line-height: 1.6;
+    color: #898989;
+    padding-bottom: 120px;
+}
+
+#services .mnsrtbold18px{
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+/* portfolio section*/
+
+#portfolio{
+    background-color: #f7f7f7;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+#portfolio h3{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#portfolio p{
+    padding-top: 25px;
+    font-size: 16px;
+    color: #898989;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 75px;
+}
+
+
+
+#portfolio .card-container h4{
+    font-size: 18px;
+    font-style: bold;
+    padding-top: 30px;
+}
+#portfolio .card-container p{
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    
+}
+
+#portfolio .list-container{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 35px;
+    
+    
+}
+
+
+#portfolio .list-container .last{
+    padding-bottom: 120px;
+}
+
+/* About Us Section */
+#aboutus{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#aboutus .about-container{
+    display: flex;
+    flex-direction: column;
+}
+#aboutus .about-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: right;
+    text-align: right;
+    float: left;
+    width: 30%;
+    
+    
+}
+#aboutus .about-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    
+    
+}
+#aboutus .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 90px;
+    
+}
+
+#aboutus .about-text-container h4{
+    
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+    
+}
+#aboutus .about-text-container p{
+    font-size: 16px;
+    color: #898989;
+    line-height: 1.5;
+}
+
+/* right*/
+#aboutus .about-text-container-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+    text-align:left;
+    float: right;
+    width: 30%;
+    
+    
+}
+#aboutus .about-img-container-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    
+    
+}
+
+#aboutus .about-img-container-top{
+    display: none;
+}
+#aboutus .abt-h{
+    
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-right: auto;
+    
+}
+#aboutus .abt-p{
+    font-size: 16px;
+    margin-right: auto;
+    color: #898989;
+    line-height: 1.5;
+    
+}
+#aboutus div.row{
+    align-items: center;
+}
+
+
+#aboutus div.yellow{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+#aboutus .circle-yellow{
+    background-color: #fed23a;
+    border-radius: 80px;
+    border-color: #f1f1f1;
+    cursor: pointer;
+    margin-bottom: 120px;
+    padding: 8px;
+}
+#aboutus .circle-yellow:hover{
+    transform: scale(0.98);
+}
+/*contact section */
+#contact{
+    background-image: url(../images/Map\ Image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+#contact form{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1,2fr);
+    
+}
+#contact form input{
+    height: 50px;
+    width: 455px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#contact div.form-container{
+    display: flex;
+    flex-direction: row;
+    
+
+    
+}
+#contact div.right{
+    height: 100%;
+    width: 100%;
+}
+#contact input.message{
+    width:100%;
+    height: 210px;
+    margin-left: 40px;
+}
+#contact input.message{
+    font-size: 14px;
+    padding: 20px;
+}
+#contact a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#contact .btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+#contact .msg-btn{
+    margin-bottom: 110px;
+}
+
+/* footer */ 
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.svg-container{
+    margin: 20px;
+}
+.social{
+      margin: 0 20px;
+      
+      color: black;
+     
+}
+#footer p{
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+
+/*media Queries */
+
+@media(max-width:700px){
+    
+    .menu-btn{
+        display: block;   
+        padding-top: 15px;
+        color: #ccc;
+    }
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+    nav ul.left-menu{
+        z-index: 2;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2b2828;
+        color: white;
+        transform: translateX(-500px);
+        width: 40%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        transition: transform 0.5s ease-in-out;
+    }
+    nav ul.left-menu.show{
+        transform: translateX(-20px);
+    }
+    nav ul.left-menu li {
+      
+      margin-left: 30px;
+      padding-left: 30px;
+      padding: 10px;
+      margin-top: 5px;
+      
+
+    }
+    
+    #hero h1{
+        font-size: 35px;
+        
+        font-weight: 300;
+    }
+    #hero p{
+        font-size: 50px;
+        padding-bottom: 0px;
+    }
+    .btn{
+        background-color: #fed136;
+        color: white;
+        height: 50px;
+        width: 200px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        text-align: center;
+        margin-top: 60px;
+    } 
+    
+    #services .services-list-container{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+       grid-gap: 10px;
+    }
+    #services .robotoslab14px{
+        padding-bottom: 30px;
+    }
+    #services .services-list-container{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-gap: 55px;
+    }
+
+    #portfolio .list-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 60px;
+        
+        
+    }
+    #portfolio .card-container h4{
+        padding-top: 10px;
+    }
+
+
+    #aboutus .row {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #aboutus .about-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        
+    }
+    #aboutus .about-text-container h4{
+        
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        width: 100%;
+        
+        
+    }
+    #aboutus .about-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        
+        width: 100%;
+        
+        
+    }
+    #aboutus .about-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        
+        
+    }
+
+    #aboutus .about-text-container-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        text-align:center;
+        
+        width: 100%;
+        
+        
+    }
+    #aboutus .about-img-container-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        padding-bottom: 20px;
+        
+        
+    }
+    
+    #aboutus .about-img-container-top{
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    #aboutus .about-img-container-bottom{
+        display: none;
+    }
+
+    #contact form{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+        padding-right: 20px;
+        text-align: center;
+        
+    }
+
+    #contact form input{
+        height: 50px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+        border-radius: 5px;
+        margin-bottom: 30px;
+        width: 400px;
+    }
+    #contact div.form-container{
+        display: flex;
+        flex-direction: row;
+        
+    
+        
+    }
+    #contact div.right{
+        display: none;
+    }
+    #contact input.message{
+        display: none;
+    }
+    #contact input.message{
+        display: none;
+    }
+    
+}
+
+@media(max-width:968px){
+    #portfolio .list-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+@media(max-width:500px){
+    #portfolio .list-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
