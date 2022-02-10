@@ -432,11 +432,11 @@ a{
     width:100%;
     height: 210px;
     margin-left: 40px;
-}
-#contact input.message{
     font-size: 14px;
     padding: 20px;
+    border-radius: 8px;
 }
+
 #contact a{
     display: flex;
     justify-content: center;
