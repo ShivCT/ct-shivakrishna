@@ -263,6 +263,12 @@ a{
     
     
 }
+#portfolio .list-container .card-container:hover{
+    transform: scale(0.98);
+    cursor: pointer;
+    
+    
+}
 
 
 #portfolio .list-container .last{
