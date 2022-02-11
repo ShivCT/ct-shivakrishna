@@ -1,0 +1,41 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 55px;
+}
+
+/* Heading and animation part */
+.anime{
+    margin: 0;
+    padding: 0;
+    
+    background: url('/ct-projects/background-animation/assets/img/itDUCo.webp') no-repeat;
+    background-clip: text;
+    
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 15s linear infinite;
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: 0% 30%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+

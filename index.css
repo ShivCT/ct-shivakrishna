@@ -21,10 +21,20 @@ ul li a{
     font-size: 20px;
     text-decoration: none;
     color: blue;
+    padding: 0 60px;
 }
-
 .container{
-    font-display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+    
+    
+}
+.right ul li {
+    list-style: none;
 }
