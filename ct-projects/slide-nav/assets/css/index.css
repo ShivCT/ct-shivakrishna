@@ -1,0 +1,95 @@
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*Navbar*/
+h1{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+    
+}
+.navbar .ham{
+    color: white;
+}
+.navbar .ham:hover{
+    opacity: 0.7;
+}
+.navbar{
+    background: #3b5998;
+    overflow: hidden;
+    
+    height: 65px;
+}
+.navbar a{
+    display: block;
+    float: left;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 18px;
+}
+.navbar ul li a{
+    padding: 20px 20px 0 0;
+    color: white;
+    
+}
+.navbar ul li a:hover{
+    opacity: 0.7;
+    
+}
+/*Slide Menu*/
+.slide-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 70px;
+    transition: 0.5s;
+}
+.slide-nav a{
+    padding: 20px 20px ;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ccc;
+    display: block;
+    padding-left: 30px;
+}
+
+.slide-nav a:hover{
+    color: white;
+}
+
+.btn-close{
+    position: absolute;
+    color: aliceblue;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    right: 22px;
+}
+
+#home{
+    transition: 0.5s;
+}
+/*Media Queries */
+@media(max-width:568px){
+    .navbar-nav{
+        display: none;
+    }
+}

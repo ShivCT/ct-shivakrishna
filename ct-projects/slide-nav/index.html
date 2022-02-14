@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <meta name="description" content="This is Responsive HTML & CSS Side Menu From Scratch created by shiv" />
+    <title>HTML & CSS Side Menu</title>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar">
+            <span class="open-slide">
+                <a class="ham" href="#" onclick="openSlideMenu()">    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </a>
+            </span>
+        
+            <ul class="navbar-nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Follow</a></li>
+            </ul>
+        </nav>
+            <div id="slide-menu" class="slide-nav">
+                <a class="btn-close" onclick="closeSlideMenu()">&times</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Follow</a>
+            </div>
+        
+    </header>
+            <!--Home section-->
+            <section id="home">
+                <h1>Responsive Slide Menu</h1>
+            </section>
+
+
+     <!--JavaScript for Slide Menu-->       
+     <script>
+         function openSlideMenu(){
+            document.getElementById('slide-menu').style.width='250px';
+            document.getElementById('home').style.marginLeft='250px';
+         }
+
+         function closeSlideMenu(){
+            document.getElementById('slide-menu').style.width='0';
+            document.getElementById('home').style.marginLeft='0';
+         }
+     </script>       
+</body>
+</html>
