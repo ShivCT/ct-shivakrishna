@@ -14,13 +14,21 @@ body {
 	min-height: 100vh;
 	margin: 0;
 }
-
-h1 {
-	position: absolute;
+.home{
+	
+	opacity: 0;
+	display: none;
+	transition: opacity 2s ease-in;
+	top: 0;
+	
+}
+.home h1 {
+	
 	text-align: center;
 	top: 0;
 	padding-top: 10px;
 }
+
 
 .loading-container {
 	animation: rotate 2s linear infinite;
