@@ -89,11 +89,10 @@ div.column{
     background-color: #4CAf50
 }
 
-@media(max-width:700px){
+@media(max-width:800px){
     .row{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
     }
-    
-}
+   

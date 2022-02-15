@@ -9,32 +9,39 @@ body{
 h1{
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 ul{
     margin: 0;
     padding: 0;
     
+    
 }
 ul li a{
-    margin: 40px;
+    margin: 20px;
     font-size: 20px;
     text-decoration: none;
     color: blue;
-    padding: 0 60px;
+    padding: auto;
 }
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+
+.right li{
+    list-style:inside;
+    
 }
 .left{
+    float: left;
     width: 50%;
 }
 .right{
+    float: left;
     width: 50%;
-    
-    
 }
-.right ul li {
-    list-style: none;
-}
+
